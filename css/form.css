@@ -35,6 +35,8 @@
     grid-template-columns: minmax(130px, auto) minmax(130px, auto);
     grid-auto-rows: 50px;
     grid-gap: 30px;
+    /* grid-column-gap: 30px;
+    grid-row-gap: 30px; */
     padding: 60px;
 }
 
