@@ -5,19 +5,50 @@
 
 .container{
     margin: auto;
-    width: 50vw;
-    background-color: #ccc;
-    padding: 60px 150px;
+    width: 1000px;
 }
 
-input {
+/* input {
     border: none;
     border-radius: 6px;
     background-color: #aaa;
     font-size: 22px;
-}
+} */
 
 
 .container {
     display: grid;
+    grid-template-columns: 400px 600px;
+}
+
+.part1 {
+    background-color: rgb(202, 177, 35);
+}
+
+.part2 {
+    background-color: #FFF;
+}
+
+.part2 {
+    width: 600px;
+    display: grid;
+    grid-template-columns: minmax(130px, auto) minmax(130px, auto);
+    grid-auto-rows: 50px;
+    grid-gap: 30px;
+    padding: 60px;
+}
+
+.part2 >div:nth-child(3), .part2 >div:nth-child(4), .part2 >div:nth-child(5), .part2 >div:nth-child(6) {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.part2 > div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.part2 > div:nth-child(5) {
+    display: grid;
+    grid-template-columns: 25px auto;
 }

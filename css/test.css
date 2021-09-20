@@ -1,0 +1,14 @@
+body {
+    background-color: cadetblue;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    grid-gap: 10px;
+}
+
+.child {
+    background-color: chocolate;
+}
