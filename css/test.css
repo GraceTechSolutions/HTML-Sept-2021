@@ -1,14 +1,36 @@
+*{
+    cursor: default;
+}
 body {
     background-color: cadetblue;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(6, minmax(200px, auto));
-    grid-auto-rows: 50px;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-rows: 150px;
+    /* grid-column-gap: ;
+    grid-row-gap: ; */
     grid-gap: 10px;
+    /* justify-items: start; */
+    /* align-items: center; */
+    /* justify-content: start; */
+    
+    /* align-content: center; HOLD*/
+
+
 }
 
 .child {
     background-color: chocolate;
+}
+
+.item {
+    background-color: cornflowerblue;
+    /* grid-column-start: 3;
+    grid-column-end: span 3; */
+    grid-column: 2/ span 2;
+    /* grid-row-start: 1;
+    grid-row-end: span 2; */
+    grid-row: 1/ span 2;
 }

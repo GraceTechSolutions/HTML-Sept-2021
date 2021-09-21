@@ -2,9 +2,16 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+.container {
+    display: grid;
+    height: 90vh;
+    /* grid-auto-rows: 1fr; */
+    justify-items: center;
+    align-items: center;
+}
 
-.container{
-    margin: auto;
+.row{
+    /* margin: auto; */
     width: 1000px;
 }
 
@@ -15,8 +22,7 @@
     font-size: 22px;
 } */
 
-
-.container {
+.row {
     display: grid;
     grid-template-columns: 400px 600px;
 }
