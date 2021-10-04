@@ -2,7 +2,7 @@
     cursor: default;
 }
 body {
-    background-color: cadetblue;
+    background-color: rgb(17, 28, 29);
 }
 
 .container {
@@ -25,12 +25,23 @@ body {
     background-color: chocolate;
 }
 
-.item {
+.ex_width {
     background-color: cornflowerblue;
     /* grid-column-start: 3;
     grid-column-end: span 3; */
-    grid-column: 2/ span 2;
+    grid-column: auto/ span 2;
     /* grid-row-start: 1;
-    grid-row-end: span 2; */
-    grid-row: 1/ span 2;
+    grid-row-end: span 2;
+    grid-row: 1/ span 2; */
+}
+
+.ex_height {
+    background-color: rgb(29, 218, 186);
+    grid-row: auto/ span 2;
+}
+
+.extra {
+    background-color: violet;
+    grid-row: auto/ span 2;
+    grid-column: auto/ span 2;
 }
